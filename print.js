@@ -19,5 +19,11 @@ let Recipe = {
     },
     print: function () {
         return (this.recipeFor + this.playAttributes + this.totalAmount + this.totalBonuses);
+    },
+    clear: function () {
+        this.recipeFor = '';
+        this.playAttributes = '';
+        this.totalAmount = '';
+        this.totalBonuses = '';
     }
 }

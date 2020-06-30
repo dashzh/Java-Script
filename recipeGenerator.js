@@ -5,6 +5,7 @@ class RecipeGenerator {
     }
 
     generateRecipe() {
+        Recipe.clear();
         Recipe.appendRecipeFor(this.invoice.customer);
 
         for (let perf of this.invoice.performance) {
